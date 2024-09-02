@@ -10,7 +10,7 @@ model=joblib.load(joblib_in)
 
 @app.get('/')
 def index():
-    return {'message': 'Cars Recommender ML API Test'}
+    return {'message': 'Cars Recommender ML API Test2'}
 
 @app.post('/car/predict')
 def predict_car_type(data:CarUser):
