@@ -10,7 +10,7 @@ model=joblib.load(joblib_in)
 
 @app.get('/')
 def index():
-    return {'message': 'Cars Recommender ML API Test23'}
+    return {'message': 'Cars Recommender ML API'}
 
 @app.post('/car/predict')
 def predict_car_type(data:CarUser):
@@ -19,7 +19,6 @@ def predict_car_type(data:CarUser):
     gender=data['gender']
 
     prediction = model.predict([[age, gender]])
-    print('')
 
     return {
         'prediction': prediction[0]
