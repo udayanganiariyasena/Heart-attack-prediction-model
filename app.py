@@ -24,6 +24,8 @@ def predict_car_type(data:CarUser):
     print('')
     print('')
     print('')
+    print('')
+    print('')
 
     return {
         'prediction': prediction[0]
