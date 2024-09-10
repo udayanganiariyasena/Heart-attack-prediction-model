@@ -36,6 +36,8 @@ def predict_car_type_test(data:CarUser):
     prediction = model.predict([[age, gender]])
 
     print('')
+    print('')
+    print('')
 
     return {
         'prediction': prediction[0]
