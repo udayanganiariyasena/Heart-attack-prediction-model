@@ -10,7 +10,7 @@ model=joblib.load(joblib_in)
 
 @app.get('/')
 def index():
-    return {'message': 'Heart attack prediction model'}
+    return {'message': 'Heart attack prediction model test'}
 
 @app.post('/heart/predict')
 def heart_type(data:heartuser):

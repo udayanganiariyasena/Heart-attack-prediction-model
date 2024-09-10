@@ -27,21 +27,5 @@ def predict_car_type(data:CarUser):
     }
 
 
-@app.post('/car/predict/test')
-def predict_car_type_test(data:CarUser):
-    data = data.dict()
-    age=data['age']
-    gender=data['gender']
-
-    prediction = model.predict([[age, gender]])
-
-    print('')
-    print('')
-    print('')
-
-    return {
-        'prediction': prediction[0]
-    }
-
 if __name__ == '__main__':
     uvicorn.run(app, host='0.0.0.0', port=8000)
