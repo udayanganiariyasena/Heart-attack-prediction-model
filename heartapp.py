@@ -14,7 +14,7 @@ model=joblib.load(joblib_in)
 #Define the root route which will return a simple message when accessed
 @app.get('/')
 def index():
-    return {'message': 'Heart attack prediction model test'}
+    return {'message': 'Heart attack prediction model'}
 
 # Define a POST route to predict heart attack risk based on user input
 @app.post('/heart/predict')
