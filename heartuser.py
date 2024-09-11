@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+# Define a Pydantic model to validate the input data for the heart attack prediction
 class heartuser(BaseModel):
     age: int
     sex: int
