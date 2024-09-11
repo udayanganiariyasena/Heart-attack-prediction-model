@@ -3,14 +3,14 @@ from pydantic import BaseModel
 class heartuser(BaseModel):
     age: int
     sex: int
-    cp: int
-    trtbps: int
-    chol: int
-    fbs: int
-    restecg: int
-    thalachh: int
-    exng: int
+    chest_pain_type: int
+    resting_blood_pressure: int
+    cholesterol_level: int
+    fasting_blood_sugar: int
+    resting_electrocardiographic_results: int
+    maximum_heart_rate_achieved: int
+    exercise_induced_angina: int
     oldpeak: float
-    slp: int
-    caa: int
-    thal: int
+    slope_of_the_peak_exercise: int
+    Number_of_major_vessels_colored_by_fluoroscopy: int
+    thalassemia: int
