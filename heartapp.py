@@ -17,17 +17,17 @@ def heart_type(data:heartuser):
     data = data.dict()
     age = data['age']
     sex = data['sex']
-    cp = data['cp']
-    trtbps = data['trtbps']
-    chol = data['chol']
-    fbs = data['fbs']
-    restecg = data['restecg']
-    thalachh = data['thalachh']
-    exng = data['exng']
+    cp = data['chest_pain_type']
+    trtbps = data['resting_blood_pressure']
+    chol = data['cholesterol_level']
+    fbs = data['fasting_blood_sugar']
+    restecg = data['resting_electrocardiographic_results']
+    thalachh = data['maximum_heart_rate_achieved']
+    exng = data['exercise_induced_angina']
     oldpeak = data['oldpeak']
-    slp = data['slp']
-    caa = data['caa']
-    thal = data['thal']
+    slp = data['slope_of_the_peak_exercise']
+    caa = data['Number_of_major_vessels_colored_by_fluoroscopy']
+    thal = data['thalassemia']
     prediction = model.predict([[age, sex, cp, trtbps, chol, fbs, restecg, thalachh, exng, oldpeak, slp, caa, thal]])
     
     return {
