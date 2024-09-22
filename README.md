@@ -58,4 +58,4 @@ Contact
 For any questions or issues, feel free to contact me:
 
 Email: udayanganishiranthika@gmail.com
-GitHub: udayangani
+GitHub: udayanagani
