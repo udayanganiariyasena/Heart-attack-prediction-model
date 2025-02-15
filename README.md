@@ -1,4 +1,5 @@
 Heart Attack Prediction Model with FastAPI
+
 This repository contains a machine learning model for heart attack prediction, deployed using FastAPI on an AWS EC2 instance. The application predicts the likelihood of a heart attack based on several medical and lifestyle features. The model is a DecisionTreeClassifier trained using the heart.csv dataset.
 
 
@@ -47,4 +48,5 @@ Contact
 For any questions or issues, feel free to contact me:
 
 Email: udayanganishiranthika@gmail.com
+
 GitHub: udayanaganiariyasena
